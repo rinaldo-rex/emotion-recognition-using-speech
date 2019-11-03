@@ -4,6 +4,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "==19.3b0"
+ipython = "*"
 
 [packages]
 librosa = "==0.6.3"

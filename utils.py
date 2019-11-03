@@ -107,4 +107,3 @@ def get_audio_config(features_list):
             raise TypeError(f"Feature passed: {feature} is not recognized.")
         audio_config[feature] = True
     return audio_config
-    
