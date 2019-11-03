@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+librosa = "==0.6.3"
+numpy = "*"
+pandas = "*"
+sklearn = "*"
+tqdm = "==4.28.1"
+matplotlib = "==2.2.3"
+tensorflow = "==1.13.1"
+SoundFile = "==0.9.0"
+Wave = "*"
+PyAudio = "==0.2.11"
+Keras = "==2.2.4"
+flask = "*"
+
+[requires]
+python_version = "3.6"
