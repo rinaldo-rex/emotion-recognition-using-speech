@@ -22,7 +22,9 @@ from deep_emotion_recognition import DeepEmotionRecognizer
 my_model = SVC()
 # pass my model to EmotionRecognizer instance
 # and balance the dataset
-simple_emotion = EmotionRecognizer(model=my_model, emotions=['sad', 'neutral', 'happy'], balance=True, verbose=0)
+simple_emotion = EmotionRecognizer(model=my_model, emotions=['sad', 'neutral',
+                                                             'happy', 'fear'],
+                                   balance=True, verbose=0)
 # train the model
 simple_emotion.train()
 

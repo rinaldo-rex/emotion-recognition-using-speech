@@ -222,3 +222,4 @@ test_*.csv
 train_*.csv
 
 .DS_Store
+features/*
