@@ -1,8 +1,15 @@
+FROM ubuntu
 FROM python:3.6
 
 WORKDIR /app
 
 COPY Pip* /app/
+
+RUN apt-get -y update
+RUN apt-get install -y libsndfile1
+RUN apt-get --assume-yes install libasound-dev portaudio19-dev     libportaudio2 libportaudiocpp0
+RUN apt-get install -y libasound2-dev portaudio19-dev
+RUN apt-get install python3-pyaudio
 
 RUN pip install --upgrade pip && \
     pip install pipenv && \
